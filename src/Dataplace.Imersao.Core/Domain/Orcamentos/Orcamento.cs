@@ -67,6 +67,8 @@ namespace Dataplace.Imersao.Core.Domain.Orcamentos
             if (!produto.IsValid())
                 return default;
 
+    
+
             this.Itens.Add(item);
             return item;
 

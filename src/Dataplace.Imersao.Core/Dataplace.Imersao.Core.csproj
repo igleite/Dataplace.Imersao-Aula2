@@ -78,12 +78,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Exections\DomainException.cs" />
+    <Compile Include="Application\Orcamentos\Commands\AdicionarOrcamentoCommand.cs" />
+    <Compile Include="Application\Orcamentos\Commands\AdicionarOrcamentoItemCommand.cs" />
+    <Compile Include="Application\Orcamentos\Commands\FecharOrcamentoCommand.cs" />
+    <Compile Include="Application\Orcamentos\Commands\OrcamentoCommandHandler.cs" />
+    <Compile Include="Application\Orcamentos\Events\OrcamentoItemAdicionadoEvent.cs" />
+    <Compile Include="Application\Orcamentos\Events\OrcamentoAdicionadoEvent.cs" />
+    <Compile Include="Application\Orcamentos\Events\OrcamentoFechadoEvent.cs" />
+    <Compile Include="Application\Orcamentos\Events\OrcamentoEventHandler.cs" />
+    <Compile Include="Application\Orcamentos\Queries\ObterOcamentoQuery.cs" />
+    <Compile Include="Application\Orcamentos\Queries\OrcamentoQueryHandler.cs" />
+    <Compile Include="Application\Orcamentos\ViewModels\OrcamentoItemViewModel.cs" />
+    <Compile Include="Application\Orcamentos\ViewModels\OrcamentoViewModel.cs" />
+    <Compile Include="Domain\Execptions\DomainException.cs" />
     <Compile Include="Domain\Orcamentos\Enums\OrcamentoItemStatusEnum.cs" />
     <Compile Include="Domain\Orcamentos\Enums\OrcamentoStatusEnum.cs" />
     <Compile Include="Domain\Orcamentos\Enums\TpRegistroEnum.cs" />
     <Compile Include="Domain\Orcamentos\Orcamento.cs" />
     <Compile Include="Domain\Orcamentos\OrcamentoItem.cs" />
+    <Compile Include="Domain\Orcamentos\Repositories\IOrcamentoItemRepository.cs" />
     <Compile Include="Domain\Orcamentos\Repositories\IOrcamentoRepository.cs" />
     <Compile Include="Domain\Orcamentos\ValueObjects\OrcamentoCliente.cs" />
     <Compile Include="Domain\Orcamentos\ValueObjects\OrcamentoItemPreco.cs" />

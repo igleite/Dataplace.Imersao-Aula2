@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Application\Commands\**" />
+    <EmbeddedResource Remove="Application\Commands\**" />
+    <None Remove="Application\Commands\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
@@ -22,12 +29,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Dataplace.Imersao.Core\Dataplace.Imersao.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Dataplace.Core.Lib">
       <HintPath>U:\Pack 2022.R3-S4\Install\Dataplace.Core.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Dataplace.Core.win">
+      <HintPath>U:\Pack 2022.R3-S4\Install\Dataplace.Core.win.dll</HintPath>
     </Reference>
     <Reference Include="dp.library.05">
       <HintPath>U:\Pack 2022.R3-S4\Install\dp.library.05.dll</HintPath>
